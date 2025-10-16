@@ -94,14 +94,23 @@
     btn.addEventListener('click', () => handleMove(idx));
   });
 
-  // Keyboard navigation: arrow keys move focus within the 3x3 grid
+  // Keyboard navigation: arrow keys move focus to the next OPEN cell in the direction
   function moveFocus(currentIdx, dx, dy) {
-    const x = currentIdx % 3;
-    const y = Math.floor(currentIdx / 3);
-    const nx = Math.max(0, Math.min(2, x + dx));
-    const ny = Math.max(0, Math.min(2, y + dy));
-    const n = ny * 3 + nx;
-    cells[n].focus();
+    const startX = currentIdx % 3;
+    const startY = Math.floor(currentIdx / 3);
+    let step = 1;
+    while (true) {
+      const nx = startX + dx * step;
+      const ny = startY + dy * step;
+      if (nx < 0 || nx > 2 || ny < 0 || ny > 2) break; // out of bounds
+      const n = ny * 3 + nx;
+      if (board[n] == null && !cells[n].disabled) { // open and interactable
+        cells[n].focus();
+        return;
+      }
+      step += 1;
+    }
+    // If no open cell found in that direction, do nothing (stay on current)
   }
 
   cells.forEach((btn, idx) => {
