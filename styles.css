@@ -59,6 +59,7 @@ body {
   aspect-ratio: 1 / 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 12px;
   background: transparent;
 }
