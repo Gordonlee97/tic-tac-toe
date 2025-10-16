@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic‑Tac‑Toe</title>
+    <meta name="description" content="A simple, elegant Tic‑Tac‑Toe game." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="title">
+      <header class="app__header">
+        <h1 id="title">Tic‑Tac‑Toe</h1>
+        <p class="subtitle">Play X vs O on a 3×3 grid</p>
+      </header>
+
+      <section class="status" aria-live="polite" aria-atomic="true">
+        <div id="message" class="message">Player X’s turn</div>
+      </section>
+
+      <section class="board__wrap">
+        <div class="board" role="grid" aria-label="Tic‑Tac‑Toe board">
+          <!-- 9 cells -->
+          <button class="cell" role="gridcell" aria-label="Cell 1" data-index="0"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 2" data-index="1"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 3" data-index="2"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 4" data-index="3"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 5" data-index="4"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 6" data-index="5"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 7" data-index="6"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 8" data-index="7"></button>
+          <button class="cell" role="gridcell" aria-label="Cell 9" data-index="8"></button>
+        </div>
+      </section>
+
+      <section class="controls">
+        <div class="controls__row">
+          <button id="resetBtn" class="btn" aria-label="Reset game">Reset</button>
+          <div class="spacer"></div>
+          <label class="toggle">
+            <input id="startWithO" type="checkbox" />
+            <span>Start with O</span>
+          </label>
+        </div>
+      </section>
+
+      <footer class="app__footer">
+        <p>
+          Built with ♥. Use arrow keys and Enter to play; Tab navigates cells.
+        </p>
+      </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
