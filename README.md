@@ -3,6 +3,8 @@
 A clean, interactive **Tic-Tac-Toe** web game built using **HTML, CSS, and JavaScript**, developed collaboratively with **AI coding assistance** via **Cursor**.  
 This project was created as an experiment in **prompt engineering** and **AI-assisted development**, showcasing modern workflows for building simple games efficiently and clearly.
 
+**Try it live:** [Tic-Tac-Toe](https://gordonlee97.github.io/tic-tac-toe/)
+
 ---
 
 ## 🚀 Features
@@ -50,14 +52,30 @@ You can view the full development journey in the commit history.
 
 ---
 
-## 🛠️ Installation & Running Locally
+🧪 **Example Improvements (AI Iterations)**
 
-```bash
-# Clone this repository
-git clone https://github.com/<your-username>/tic-tac-toe-ai.git
+| Iteration | Description |
+|---|---|
+| v1.0 | Basic game logic implemented (player turns, win check) |
+| v1.1 | Fixed “reset button not clearing board” bug |
+| v1.2 | Improved responsive CSS and hover interactions |
+| v1.3 | Added AI-assisted refactor for cleaner code and better DOM handling |
+| v1.4 | Human testing applied to ensure all edge cases work correctly and gameplay is intuitive |
 
-# Navigate to the project directory
-cd tic-tac-toe-ai
+🧑‍💻 **About the Developer**
 
-# Open the game in your browser
-# (Double-click index.html or use Live Server in VS Code)
+This project was created by Gordon Lee, a software engineer transitioning into AI-focused development. It represents a hands-on exploration of AI-enhanced software workflows, where prompt engineering, debugging, and human testing combine to produce robust and intuitive applications.
+
+⭐ **Future Enhancements**
+
+*   Add single-player mode with basic AI opponent
+*   Implement score tracking and game history
+*   Add dark mode
+*   Improve mobile UI for enhanced touch interactions
+*   Include sound and/or haptic feedback
+
+💬 **Feedback**
+
+If you have suggestions or find issues, feel free to [open an issue](https://github.com/YOUR_USERNAME/YOUR_REPO/issues) or [submit a pull request](https://github.com/YOUR_USERNAME/YOUR_REPO/pulls). Feedback on gameplay, UX, or AI development workflow is especially welcome.
+
+**(Replace `YOUR_USERNAME` and `YOUR_REPO` with your actual GitHub username and repository name for the links to work.)**
