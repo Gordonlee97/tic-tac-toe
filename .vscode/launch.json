@@ -1,13 +1,11 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-			"type": "pwa-msedge",
+            "name": "Launch index.html",
+            "type": "firefox",
             "request": "launch",
-			"name": "Open index.html (Edge)",
+            "reAttach": true,
             "file": "c:\\Users\\gordo\\Cursor\\Games\\tic-tac-toe\\index.html"
         }
     ]
